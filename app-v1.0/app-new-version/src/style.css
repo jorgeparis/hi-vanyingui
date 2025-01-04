@@ -1,5 +1,4 @@
-
-*{
+* {
   font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
@@ -55,14 +54,13 @@
   justify-content: safe;
   align-content: center;
   align-items: center;
+  box-shadow: 5px 2px 2px 5px rgba(0, 0, 0, 0.3);
 
   overflow: hidden;
 }
 
 .secondary-carousel-l {
   width: 50%;
-  
-  border: dotted rgb(0, 0, 0);
 }
 
 .secondary-carousel img {
@@ -74,12 +72,34 @@
 .produtos-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 400px);
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 500px);
   row-gap: 20px;
   column-gap: 20px;
 }
 
 .produto {
-  border: dotted rgb(0, 0, 0);
+  
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.p-badge {
+  width: 90px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: rgb(248, 10, 189);
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.p-produ-imagem {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  align-self: flex-start;
 }
