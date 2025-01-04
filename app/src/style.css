@@ -1,325 +1,85 @@
-* {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
+
+*{
+  font-family: "Roboto", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
-.container-main{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.header {
 }
 
-.header-container {
-  width: inherit;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 12em;
+.root {
+  padding: 10px;
+  margin: 10px;
 }
+
+.contentor-principal {
+}
+
 .main-carrosel {
-  width: 100%;
+}
+
+.carousel-item img {
   height: 700px;
-  display: flex;
+  aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+.carousel-principal {
+}
+
+.texto-categoria {
+}
+
+.categorias {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 5em;
   overflow: hidden;
 }
-.main-carrosel-img {
-  height: inherit;
-}
 
-.lista-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 5em;
-  list-style-type: none;
-  align-self: center;
-}
-
-.contactos {
-  text-decoration: none;
-}
-.category-list-container {
-  height: 75px;
-}
-.category {
-  height: 75px;
+.cat {
   width: 200px;
-  background-color: rgb(138, 138, 138);
+  height: 45px;
+  border: dotted rgb(0, 0, 0);
+  flex: 1 1 auto;
 }
 
-.item-produto:hover {
-  background-color: rgb(209, 219, 120);
-  text-decoration: underline;
-  border: 2px solid rgb(233, 233, 233);
-  border-radius: 10px;
-  resize: 150%;
-  cursor: pointer;
-}
-
-.img-logo {
-  align-self: flex-start;
-}
-
-.categories-container {
+.secondary-carousel {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: safe;
+  align-content: center;
   align-items: center;
-  background-color: brown;
+
+  overflow: hidden;
 }
 
-.categories-text-header {
-  align-self: flex-start;
-  font-weight: -200;
-}
-.arrow-container {
-  justify-self: flex-end;
-
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  gap: 0.5em;
+.secondary-carousel-l {
+  width: 50%;
+  
+  border: dotted rgb(0, 0, 0);
 }
 
-.back-arrow {
-  height: 30px;
-  background-color: rgb(213, 218, 218);
-  border-radius: 60%;
+.secondary-carousel img {
+  height: 300px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
-.back-arrow:hover {
-  background-color: rgb(253, 154, 5);
-}
-
-.forward-arrow {
-  height: 30px;
-  background-color: rgb(213, 218, 218);
-  border-radius: 60%;
-}
-
-.forward-arrow:hover {
-  background-color: rgb(253, 154, 5);
-}
-
-.cereais {
-  width: 150px;
-  height: 80px;
-
-  border-radius: 10px;
-  border-color: rgb(247, 5, 5);
-  border-width: 5px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  background-color: aquamarine;
-}
-
-.productos-container {
-  align-self: flex-start;
+.produtos-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(2, 500px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
   row-gap: 20px;
   column-gap: 20px;
-
-  overflow: hidden;
 }
 
 .produto {
-  border: 2px solid rgb(233, 233, 233);
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-}
-
-.produto:hover {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border: 1.5px solid rgb(240, 160, 48);
-}
-
-.category-images {
-  height: 300px;
-  width: 100%;
-  align-self: center;
-
-  display: inline-flex;
-  gap: 3em;
-  flex-wrap: nowrap;
-  scrollbar-width: none;
-  overflow: hidden;
-}
-.carrosel-images {
-  width: 50%;
-  object-fit: cover;
-}
-.carrol-image {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgb(31, 30, 30);
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.produto-image {
-  margin-top: 0px;
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.p-description {
-  padding: 5px;
-  margin: 10px;
-  text-decoration: solid;
-  font-weight: bold;
-  text-align: justify;
-}
-.p-category {
-  padding: 5px;
-  margin: 10px;
-  text-decoration: solid;
-
-  text-align: justify;
-}
-
-.whatsapp-logo:hover {
-  resize: 50px;
-}
-
-.h-loja-em-destaque {
-  align-self: center;
-  justify-self: center;
-}
-
-.ver-mais-container {
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.ver-mais {
-  text-decoration: none;
-  justify-self: center;
-}
-
-.p-badge {
-  width: 100px;
-  height: 45px;
-  z-index: 1;
-  padding: 10px;
-  margin: 10px;
-  text-decoration: solid;
-  font-weight: bold;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 5px;
-  color: azure;
-}
-
-.whatsapp-logo {
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  z-index: 1;
-  align-self: flex-end;
-  bottom: 40px;
-  right: 30px;
-}
-
-.whatsapp-logo,
-.p-badge:hover {
-  cursor: pointer;
-}
-
-.icons-hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  visibility: hidden;
-}
-
-.produto:hover .icon-eye {
-  visibility: visible;
-  background-color: rgb(233, 146, 15);
-}
-.produto:hover .icon-cart {
-  visibility: visible;
-  background-color: rgb(233, 146, 15);
-}
-
-.img-stat {
-  width: inherit;
-  height: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2em;
-  flex-wrap: nowrap;
-}
-.img-stat-list {
-  width: 50%;
-  height: 50%;
-  background-color: bisque;
-  object-fit: cover;
-
-  border-radius: 5.5px;
-}
-.img-stat-list:hover {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border: 1.5px solid rgb(240, 160, 48);
-}
-
-.produtos-em-destaque {
-  width: inherit;
-  height: 700px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2em;
-  flex-wrap: nowrap;
-  overflow: hidden;
-}
-
-.produto-destaque {
-  width: 25%;
-  height: inherit;
-  border: 2px solid rgb(233, 233, 233);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-}
-
-.produto-destaque-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.produto-destaque-texto-categoria {
-  align-self: flex-start;
-
-  margin: 5px;
+  border: dotted rgb(0, 0, 0);
 }
